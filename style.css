@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Benne&family=Itim&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sawarabi+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Benne&family=Itim&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sawarabi+Gothic&display=swap');
+*{ /*s'applique sur toute la page*/
+    text-decoration: none; /*les liens n'ont aucunne décoration*/
+    scroll-behavior: smooth; /*le scroll n'est pas rapide et brusque*/
+}
+body{
+    margin:0;
+    background-color: white;
+}
+header{
+    display: flex;
+    justify-content: space-between; /*pour que le contenu de header soit a coté de l'autre et bien espacé*/
+    align-items: center;
+    font-family: "poppins";
+    position: fixed;/*pour que la position du header soit fixé qu'on on scroll*/
+    top:0;
+    left:0;
+    width: 100%;
+    background-color: black;
+    z-index: 1000;/*pour que le header soit au dessus de l'autre contenu*/
+}
+nav{
+    font-family: "poppins";
+    margin: 30px;
+}
+h1 {
+    margin-left: 90px;
+    color: white;
+}
+span{   
+    color: #266ca9;
+}
+nav a{
+    margin-left: 45px;
+    cursor: pointer;
+    color: white;
+    text-transform: uppercase; 
+    font-size: 16px;
+}
+a:hover{
+    color: #ade1fb;
+}
+a:focus{
+    color: black;
+}
+p{
+    text-align: justify;/*pour que les lignes sont de meme taille*/
+    margin-top: 200px;
+    padding: 50px;
+    font-size: 26px;
+    font-family: "poppins";               
+    max-width: 600px; 
+    font-weight: bold;
+
+}
+.v{
+    margin-right: 100px; /*footer*/
+}
+div.m{ /*footer*/
+    margin-left: 35%;
+    padding: 40px;
+}
+.list {
+    margin-top: 150px;
+    list-style-type: none;/*pour supprimer le point de list*/
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;/*pour qu'ils ne sont pas tous sur la meme ligne*/
+    gap: 20px; /*écart entre chaque cadre*/
+    justify-content: center;
+}
+.item {
+    padding: 15px;
+    border-radius: 5px;
+    width: 250px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;/*définit une animation sur une durée de 0.3s avec un effet ease*/
+}
+.item img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.item:hover {
+    background-color: black;
+    transform: scale(1.05); /*pour que ça grandit un petit peu*/
+}
+.item span { /*écriture sous l'image*/
+    font-weight: bold;
+    color: white;
+    font-family: "oswald";
+    font-size: larger;
+}
+footer{
+    background-color: black;
+}
+article{
+    position: relative; /*pour que le contenu de l'article soit sur l'img*/
+}
+article .e{
+   top:0px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+.im { /*image de arriére plan*/
+    width: 100%;
+    opacity: 0.5;
+}
+article .e button{
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 5px;
+    font-family: 'poppins';
+}
+table{
+    margin-left: 350px;
+    margin-top: 150px;
+    background-color: #efe9db;
+    border: solid black;
+    border-radius: 30px;
+    padding: 20px;
+}
+td{
+    padding: 5px;
+    font-family: 'poppins';
+}
+label{
+    font-weight: 600;
+    font-size: larger;
+    font-family: 'poppins';
+}
+h2{
+    font-family: 'poppins';
+    text-align: center;
+    font-size: 30px;
+    
+}
+.sign{
+    color: #266ca9;
+    font-family: 'poppins';
+    font-weight: bolder;
+}
+.sign:hover{
+    color: black;
+}
+.sub{ /*button submit*/
+    margin-right: 10px;
+    margin-left: 95px;
+}
+.see{
+    margin-left:  680px;
+    margin-bottom: 30px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+.see:hover {
+    background-color: #0056b3;
+  }
+h3{
+    margin-top: 150px;
+    margin-left: 20px;
+    color: #0056b3;
+    font-family: 'poppins';
+    font-size: xx-large;
+}
+.imgo{
+    padding-top: 100px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    width: 300px;
+}
+.section{
+    display: flex;
+    justify-content: center;
+}
+.paragraph{
+    margin-left: -200px;
+}
